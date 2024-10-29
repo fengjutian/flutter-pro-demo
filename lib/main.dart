@@ -15,16 +15,16 @@ import './MulDataTypeSources.dart' show ListItem, HeadingItem, MessageItem;
 
 
 
-void main() {
-  runApp(MyApp(
-    items: List<ListItem>.generate(
-      1000,
-      (i) => i % 6 == 0 
-        ? HeadingItem('Heading $i') 
-        : MessageItem('Sender $i', 'Message body $i'),
-    ),
-  ));
-}
+// void main() {
+//   runApp(MyApp(
+//     items: List<ListItem>.generate(
+//       1000,
+//       (i) => i % 6 == 0 
+//         ? HeadingItem('Heading $i') 
+//         : MessageItem('Sender $i', 'Message body $i'),
+//     ),
+//   ));
+// }
 
 class MyApp extends StatelessWidget {
   final List<ListItem> items;
